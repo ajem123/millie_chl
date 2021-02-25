@@ -781,7 +781,7 @@ footer p {
 		height: 179vw;
 	}
 	
-	.one .t1 a {
+	.one .t1 {
 	background-image:url(../img/te1_mo.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -789,7 +789,7 @@ footer p {
 
 }
 
-	.one .t2 a {
+	.one .t2 {
 	background-image:url(../img/te2_mo.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -797,7 +797,7 @@ footer p {
 
 }
 
-	.one .t3 a {
+	.one .t3 {
 	background-image:url(../img/te3_mo.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
