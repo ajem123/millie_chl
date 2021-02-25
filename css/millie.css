@@ -166,6 +166,34 @@ header .mobile_menu {
 	width: 2vw;
 }
 
+.one .swiper-wrapper {
+	height: 51vw;
+}
+
+.one .t1 a {
+	background-image:url(../img/te1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.one .t2 a {
+	background-image:url(../img/te2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.one .t3 a {
+	background-image:url(../img/te3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;	
+}
+
 
 .four {
 	width: 100%;
@@ -602,8 +630,8 @@ footer p {
 
 	header .mobile_btn {
 		display: block;
-		width: 5vw;
-		margin: 2vw;
+		width: 7vw;
+		margin: 3vw;
 		margin-top: 3.8vw;
 	}
 
@@ -747,7 +775,37 @@ footer p {
 		font-size: 4vw;
 		margin: 10vw
 	}
+	
+	
+	.one .swiper-wrapper {
+		height: 179vw;
+	}
+	
+	.one .t1 a {
+	background-image:url(../img/te1_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
+}
+
+	.one .t2 a {
+	background-image:url(../img/te2_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.one .t3 a {
+	background-image:url(../img/te3_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+	
+	
 	.four {
 		height: auto;
 	}
@@ -988,4 +1046,443 @@ margin: 0 auto;
 }
 
 
+}
+@media screen and (max-width:360px) {
+	header {
+		height: 60px;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .top_menu {
+		display: none;
+	}
+
+	header .logo {
+		width: 20vw;
+		margin: 1.6vw;
+	}
+
+	header .mobile_btn {
+		display: block;
+		width: 5vw;
+		margin: 2vw;
+		margin-top: 3.8vw;
+	}
+
+	header .mobile_menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -100vw;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+	}
+
+	header .mobile_menu .menu_in {
+		background-color: #fff;
+		width: 75vw;
+		height: 100%;
+		padding: 7.5vw;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	header .mobile_menu button {
+		float: left;
+		width: 10vw;
+		margin: 7vw 7.5vw;
+	}
+
+	header .mobile_menu .menu_in p {
+		text-align: center;
+		font-size: 3vw;
+		margin-top: 5vw;
+	}
+
+	header .mobile_menu .menu_in p span {
+		font-weight: bold;
+	}
+
+	header .mobile_menu .menu_in .member a {
+		float: left;
+		width: 50%;
+		text-align: center;
+		font-size: 2.5vw;
+		border: 1px solid #ccc;
+		padding: 1.5vw;
+		box-sizing: border-box;
+
+	}
+
+	header .mobile_menu .menu_in .member {
+		width: 100%;
+		height: 10vw;
+	}
+
+	header .mobile_menu .menu_in .member a.active {
+		background-color: #212121;
+		color: #fff;
+		border: 1px solid #212121;
+	}
+
+	header .mobile_menu .menu_in .icon {
+		margin-top: 3vw;
+	}
+
+	header .mobile_menu .menu_in .icon ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	header .mobile_menu .menu_in .icon ul li {
+		width: 33.33333333333333%;
+		height: 24vw;
+		box-sizing: border-box;
+		padding: 4vw;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-right: none;
+	}
+
+
+
+	header .mobile_menu .menu_in .icon ul li p {
+		font-size: 2.5vw;
+		margin: 2vw 0;
+		white-space: nowrap;
+	}
+
+	header .mobile_menu .menu_in .icon ul li:last-child {
+		border-right: 1px solid #ccc;
+	}
+
+	header .mobile_menu .menu_in .tab {
+		width: 100%;
+		margin-top: 5vw;
+	}
+
+	header .mobile_menu .menu_in .tab .title {
+		display: flex;
+	}
+
+	header .mobile_menu .menu_in .tab .title a {
+		font-size: 2.5vw;
+		font-weight: bold;
+		width: 33.33333333333333%;
+		border: 1px solid #ccc;
+		background-color: #efefef;
+		text-align: center;
+		padding: 2vw;
+		box-sizing: border-box;
+		color: #666;
+	}
+
+	header .mobile_menu .menu_in .tab .title a.active {
+		background-color: #fff;
+		border-bottom: none;
+	}
+
+	header .mobile_menu .menu_in .tab .content {
+		position: relative;
+		width: 100%;
+	}
+
+	header .mobile_menu .menu_in .tab .content div {
+		width: 100%;
+		position: absolute;
+		background-color: #fff;
+		box-sizing: border-box;
+		padding: 5vw 0;
+	}
+
+	header .mobile_menu .menu_in .tab .content div a {
+		width: 100%;
+		font-size: 2.5vw;
+		padding: 1.5vw;
+		/*화살표background-image: url*/
+		/*background-position: center right;
+		background-repeat: no-repeat;
+		background-size: 16px;*/
+	}
+
+	h1 {
+		font-size: 4vw;
+		margin: 10vw
+	}
+	
+	
+	.one .swiper-wrapper {
+		height: 190vw;
+	}
+	
+	.one .t1 a {
+	background-image:url(../img/te1_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.one .t2 a {
+	background-image:url(../img/te2_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.one .t3 a {
+	background-image:url(../img/te3_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+	.one .swiper-pagination {
+		bottom: 1vw;
+	}
+	
+	
+	.four {
+		height: auto;
+	}
+
+	.four video {
+		position: relative;
+
+	}
+
+	.two {
+		margin-top: 7vw;
+	}
+
+	.two .swiper-container {
+		width: 40%;
+		height: 78vw;
+		margin: 0 auto;
+		margin-top: 8vw
+	}
+
+	.two .swiper-container a {
+		width: 40vw;
+	}
+
+	.three .left_area {
+		height: 110vw
+	}
+
+	.three .left_area h1 {
+		font-size: 5.3vw;
+		margin-right: 43vw;
+		margin-top: 8vw;
+	}
+
+	.three .left_area h3 {
+		font-family: 'NEXON Lv2 Gothic Bold';
+		font-size: 5.6vw;
+		text-align: center;
+		line-height: 9.3vw;
+		margin-right: 40.5vw;
+		padding-top: 8vw
+	}
+
+	.three .right_area {
+		height: 110vw;
+
+	}
+
+	.three .right_area ul li {
+		height: 30vh;
+	}
+
+	.three .right_area ul li a img {
+		width: 25vw;
+		margin-left: 22vw;
+		position: absolute;
+	}
+
+	.three .right_area ul .c2 a img {
+		margin-top: 5vw;
+	}
+
+	.three .right_area ul .c2 h2 {
+		position: absolute;
+		font-size: 5vw;
+		margin-top: 18vw;
+		margin-left: 7vw;
+	}
+
+	.three .right_area ul .c3 h2 {
+		font-size: 4.5vw;
+		margin-left: 1vw;
+	}
+
+	.three .right_area ul .c3 h3 {
+		position: absolute;
+		font-size: 4.5vw;
+		margin-left: 1vw;
+	}
+
+	.three .right_area ul .c3 p {
+		font-size: 4.5vw;
+		margin-top: 7.5vw;
+		margin-left: 1vw;
+		position: absolute;
+	}
+
+	.three .right_area ul .c4 a img {
+		width: 27.5vw;
+		margin-top: 5vw;
+	}
+
+	.three .right_area ul .c4 h2 {
+		font-size: 5vw;
+		padding-top: 13vw;
+		margin-right: 23vw;
+		text-align: right;
+		position: relative;
+		z-index: auto;
+		line-height: 8vw;
+	}
+
+	.three .right_area ul .c5 h2 {
+		font-size: 6.5vw;
+		width: 23vw;
+		margin: 21vw;
+	}
+
+	/*다섯번째*/
+	
+	
+	.five {
+		height: 130vw;
+	}
+	
+	.five .swiper-container {
+		height: 90vw;
+	}
+	
+	.five .swiper-wrapper {
+		margin: 3vw;
+	}
+	
+	.five .swiper-wrapper div img{
+		width: 35vw;
+	}
+	
+	.five .swiper-slide a p {
+		margin-top: 2.8vw;
+		font-size: 3vw;
+	}
+	
+	.five .swiper-slide a h2 {
+		margin-top:2vw;
+		font-size: 3.5vw;
+	}
+	
+	.five .swiper-slide a span {
+		font-size: 3vw;
+	}
+	
+	.seven {
+	width: 80%;
+	height: 180vw;
+	margin: 0 auto;
+}
+
+.seven .col-sm-4 {
+	height: 55vw;
+	border: 3px solid #e5e5e5;
+}
+
+
+.seven .col-sm-4 .image {
+	width: 11vw;
+	height: 4vw;
+	margin-top: 10vw;
+}
+
+.seven .col-sm-4 .image:hover {
+	transform: scale(1.2, 1.2);
+	/*크기 120%로 커짐*/
+}
+
+.seven .col-sm-4 .txt {
+	margin-top: 9.2vw;
+}
+
+.seven .col-sm-4 .txt h3 {
+	height: 4.5vw;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+	line-height: 6vw;
+}
+
+.seven .col-sm-4 .txt p {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 0.8vw;
+	margin-top: 8vw;
+	text-align: center;
+	color: #77797c;
+}
+	footer {
+	width: 100%;
+	height: 85vw;
+}
+
+
+footer address {
+	width: 100%;
+	font-size: 3.3vw;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+footer p {
+	padding-top: 5vw;
+	font-size: 3vw;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	color: #fff;
+}
+
+.fo1 .f_logo {
+	width: 100%;
+	text-align: center;
+	
+}
+
+.fo1 .f_logo img {
+	width: 25vw;
+	margin-top: 2vw;
+}
+
+.fo1 .f_logo h2 {
+
+	margin-top: 0.4vw;
+	font-size: 4vw;
+}
+
+	.sns {
+		direction: none;
+	}	
+	
+.sns ul {
+width: 0%;	
+margin: 0 auto;
+	text-align: center;
+
+}
+
+.sns ul li {
+	width: 7%;
+}
+	
 }
