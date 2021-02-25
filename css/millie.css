@@ -772,7 +772,7 @@ footer p {
 	}
 
 	h1 {
-		font-size: 4vw;
+		font-size: 5vw;
 		margin: 10vw
 	}
 	
@@ -801,8 +801,11 @@ footer p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;	
-
 }
+	
+	.one .swiper-pagination {
+		bottom: 1vw;
+	}
 	
 	
 	.four {
@@ -819,15 +822,27 @@ footer p {
 	}
 
 	.two .swiper-container {
-		width: 40%;
-		height: 78vw;
+		width: 60%;
+		height: 120vw;
 		margin: 0 auto;
 		margin-top: 8vw
 	}
 
 	.two .swiper-container a {
-		width: 40vw;
+		width: 60vw;
 	}
+	
+	.two .swiper-slide h2 {
+	font-size: 4vw;
+	margin-top: 3vw;
+	color: #333;
+}
+
+.two .swiper-slide a p {
+	font-size: 2.5vw;
+	margin-top: 1vw;
+	color: #a2a2a2;
+}
 
 	.three .left_area {
 		height: 110vw
@@ -997,7 +1012,7 @@ footer p {
 
 footer address {
 	width: 90%;
-	font-size: 15px;
+	font-size: 14px;
 	text-align: center;
 	line-height: 78px;
 
@@ -1208,7 +1223,7 @@ margin: 0 auto;
 	}
 
 	h1 {
-		font-size: 4vw;
+		font-size: 5vw;
 		margin: 10vw
 	}
 	
@@ -1259,15 +1274,27 @@ margin: 0 auto;
 	}
 
 	.two .swiper-container {
-		width: 40%;
-		height: 78vw;
+		width: 55%;
+		height: 120vw;
 		margin: 0 auto;
 		margin-top: 8vw
 	}
 
 	.two .swiper-container a {
-		width: 40vw;
+		width: 55vw;
 	}
+	
+	.two .swiper-slide h2 {
+	font-size: 5vw;
+	margin-top: 4vw;
+	color: #333;
+}
+
+.two .swiper-slide a p {
+	font-size: 3.5vw;
+	margin-top: 1vw;
+	color: #a2a2a2;
+}
 
 	.three .left_area {
 		height: 110vw
