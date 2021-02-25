@@ -124,6 +124,9 @@ $(document).ready(function () {
 			},
 			480: {
 				slidesPerView: 1
+			},
+			360: {
+				slidesPerView: 1
 			}
 		},
 		autoplay: {
@@ -162,6 +165,9 @@ $(document).ready(function () {
 				slidesPerView: 2
 			},
 			480: {
+				slidesPerView: 2
+			},
+			360: {
 				slidesPerView: 2
 			}
 		},
