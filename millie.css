@@ -1,0 +1,1487 @@
+/*기본 웹폰트-나눔고딕*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	color: #212121;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #212121;
+}
+
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*레벨2-웹폰트*/
+@font-face {
+	font-family: 'NEXON Lv2 Gothic Bold';
+
+	src: local(※);
+	/*src:local(※)-내홈페이지에 접속한 사용자의 컴퓨터에 글꼴이 있으면 다운받지 말아라*/
+
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+img {
+	width: 100%;
+}
+
+.wrap {
+	width: 100%;
+}
+
+header {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	height: 90px;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.5s;
+	top: 0;
+}
+
+/*색변경*/
+header.active {
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+header.active a {
+	color: #000;
+}
+
+header.active a:hover {
+	color: #000;
+}
+
+header.active ul li a:after {
+	background-color: #000;
+}
+
+header.active .top_menu a {
+	color: #000;
+}
+
+/*색변경끝*/
+
+header .logo {
+	width: 6vw;
+	margin: 1.5vw 1.8vw;
+}
+
+header nav {
+	width: 50vw;
+	margin-top: 2.5vw;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul li a {
+	font-size: 0.9vw;
+	color: #fff;
+	text-shadow: 1px 1px 1px #999;
+	font-family: 'NEXON Lv2 Gothic Bold'
+}
+
+
+header .top_menu {
+	width: 6vw;
+	margin: 3vw;
+	margin-top: 2.5vw;
+}
+
+header .top_menu ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+header .top_menu ul a {
+	font-size: 0.7vw;
+	color: #fff;
+	font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+header ul li a {
+	position: relative;
+}
+
+header ul li a:hover {
+	color: #fff;
+}
+
+header ul li a:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background-color: #fff;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -6px;
+	transition: all 0.3s;
+}
+
+header a:hover:after {
+	width: 100%;
+}
+
+header .top_menu a:after {
+	height: 1px;
+}
+
+header .mobile_btn {
+	display: none;
+}
+
+header .mobile_menu {
+	display: none;
+}
+
+.buffet .s3_perv {
+	width: 2vw;
+}
+
+.buffet .s3_next {
+	width: 2vw;
+}
+
+.one .swiper-wrapper {
+	height: 51vw;
+}
+
+.one .t1 a {
+	background-image:url(../img/te1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.one .t2 a {
+	background-image:url(../img/te2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.one .t3 a {
+	background-image:url(../img/te3.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;	
+}
+
+
+.four {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.four video {
+	width: 100%;
+}
+
+.two {
+	margin-top: 7vw;
+}
+
+.two .swiper-container {
+	width: 70%;
+	height: 39.9vw;
+	margin: 0 auto;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+h1 {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.6vw;
+	margin: 2.3vw;
+	font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+.two .swiper-slide h2 {
+	font-size: 1.2vw;
+	margin-top: 1.2vw;
+	color: #333;
+	font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+.two .swiper-slide a p {
+	font-size: 0.7vw;
+	margin-top: 1vw;
+	color: #a2a2a2;
+	font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+.two .swiper-slide a:hover h2 {
+	color: black;
+}
+
+.two .s1_next {
+	width: 1.2vw;
+	right: 6vw;
+}
+
+.two .s1_prev {
+	width: 1.2vw;
+	left: 6vw;
+}
+
+.three .left_area {
+	background-image: url(../img/c1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	color: #fff;
+	padding: 0;
+	transition: all 0.5s;
+}
+
+.three .left_area:hover {
+	transform: scale(1.1, 1.1);
+	/*크기 %로 커짐*/
+}
+
+.three .left_area h1 {
+	font-size: 3vw;
+	margin-right: 24vw;
+	margin-top: 2.9vw;
+}
+
+.three .left_area h3 {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 2.6vw;
+	text-align: center;
+	line-height: 4.3vw;
+	margin-right: 21.5vw;
+	padding-top: 7.5vw
+}
+
+.three .left_area span {
+	color: #f9a18a;
+}
+
+/*오른쪽*/
+
+
+
+.three .right_area ul li.c2 {
+	background-image: url(../img/cct22.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.three .right_area ul li.c3 {
+	background-image: url(../img/cct33.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.three .right_area ul li.c4 {
+	background-image: url(../img/cct44.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.three .right_area ul li.c5 {
+	background-image: url(../img/cct55.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.three .right_area ul li a img {
+	width: 10vw;
+	margin-left: 13vw;
+	position: absolute;
+}
+
+.three .right_area ul .c2 a img {
+	margin-top: 5vw;
+}
+
+.three .right_area ul .c2 h2 {
+	position: absolute;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 2.1vw;
+	margin-top: 10vw;
+	margin-left: 5vw;
+}
+
+.three .right_area ul .c3 h2 {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 1.5vw;
+	margin-top: 6vw;
+	margin-left: 2vw;
+}
+
+.three .right_area ul .c3 h3 {
+	position: absolute;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 1.5vw;
+	margin-left: 4vw;
+}
+
+.three .right_area ul .c3 p {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 1.8vw;
+	margin-top: 12.5vw;
+	margin-left: 18vw;
+	position: absolute;
+}
+
+.three .right_area ul .c4 a img {
+	width: 11.5vw;
+	margin-top: 5vw;
+}
+
+.three .right_area ul .c4 h2 {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 2vw;
+	padding-top: 8vw;
+	margin-right: 12vw;
+	text-align: right;
+	position: relative;
+	z-index: auto;
+	line-height: 3vw;
+}
+
+
+
+.three .right_area ul .c5 h2 {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 2.2vw;
+	width: 28.3%;
+	margin: 0 auto;
+	margin-top: 12vw
+}
+
+
+
+.three .right_area {
+	padding: 0;
+	margin: 0;
+
+}
+
+
+.three .right_area ul {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	overflow: hidden
+}
+
+.three .right_area ul li {
+	width: 50%;
+	height: 53vh;
+	box-sizing: border-box;
+}
+
+.three .right_area ul li a {
+	transition: all 0.4s;
+}
+
+.three .right_area ul li a:hover {
+	transform: scale(1.1, 1.1);
+	/*크기 %로 커짐*/
+}
+
+
+/*.three .right_right_area ul li p {
+	color: #fff;
+	font-size: 1;
+} */
+
+.garden .right_area ul li:nth-child(2),
+.garden .right_area ul li:nth-child(3) {
+	background-color: #FFF;
+}
+
+/*다섯번째*/
+
+.five {
+	height: 42vw;
+}
+
+.five .swiper-container {
+	width: 100%;
+	height: 30vw;
+	margin: 0 auto;
+	background-color: #171717;
+}
+
+.five .swiper-slide {
+	padding: 4.8vw;
+	transition: all 0.3s;
+}
+
+.five .swiper-slide:hover {
+	transform: scale(1.1, 1.1);
+	/*크기 120%로 커짐*/
+}
+
+.five .swiper-slide a p {
+	color: darkorchid;
+
+	font-family: 'NEXON Lv2 Gothic Bold';
+	margin: 0.7vw 0vw 0vw 0vw;
+}
+
+.five .swiper-slide h2 {
+	font-size: 1.2vw;
+	color: #fff;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	margin-top: 0.4vw;
+}
+
+.five .swiper-slide a span {
+	font-size: 0.7vw;
+	color: #a2a2a2;
+	font-family: 'NEXON Lv2 Gothic Bold';
+}
+
+.five .swiper-slide a:hover h2 {
+	color: #fff
+}
+
+/*.six .col-sm-6 {
+	padding: 0;
+}*/
+
+.seven {
+	width: 80%;
+	height: 20vw;
+	margin: 0 auto;
+}
+
+.seven .col-sm-4 {
+	height: 20vw;
+	float: left;
+	border: 3px solid #e5e5e5;
+	padding: 0.5vw;
+	border-right: none;
+}
+
+
+
+.seven .col-sm-4:last-child {
+	border-right: 3px solid #e5e5e5;
+}
+
+
+.seven .col-sm-4 .image {
+	width: 4.4vw;
+	height: 4vw;
+	margin: 0 auto;
+	margin-top: 4.6vw;
+	transition: all 0.5s;
+}
+
+.seven .col-sm-4 .image:hover {
+	transform: scale(1.2, 1.2);
+	/*크기 120%로 커짐*/
+}
+
+.seven .col-sm-4 .txt {
+	margin-top: 1.2vw;
+}
+
+.seven .col-sm-4 .txt h3 {
+	height: 2.5vw;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 1.4vw;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.7vw;
+}
+
+.seven .col-sm-4 .txt p {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 0.8vw;
+	margin-top: 1vw;
+	text-align: center;
+	color: #77797c;
+}
+
+footer {
+	width: 100%;
+	height: 16vw;
+	margin-top: 7vw;
+	float: left;
+	background-color: #bfbfbf;
+}
+
+footer .fo1 {}
+
+footer address {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	width: 100%;
+	font-size: 15px;
+	line-height: 52px;
+	margin: 0 auto;
+	padding-top: 2.6vw;
+
+}
+
+footer p {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	padding-top: 0.8vw;
+	margin: 0 auto;
+	width: 50%;
+	color: #fff;
+}
+
+.fo1 .f_logo {
+	float: left;
+	padding: 3vw 9vw;
+}
+
+.fo1 .f_logo img {
+	width: 6.5vw;
+	margin-top: 2vw;
+	margin-left: 0.5vw
+}
+
+.fo1 .f_logo h2 {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	margin-top: 0.4vw;
+	font-size: 1.2vw;
+}
+
+.sns ul {
+	padding-top: 2.5vw;
+	margin-right: 9vw;
+	float: right;
+}
+
+.sns ul li {
+	float: left;
+	width: 1.8vw;
+	margin: 0.5vw;
+}
+
+/*지도 부트스트랩*/
+.arm {
+	display: none;
+}
+
+.arm .row {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 3vw
+}
+
+/*태블릿*/
+@media screen and (max-width:960px) {}
+
+/*모바일*/
+@media screen and (max-width:480px) {
+	header {
+		height: 60px;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .top_menu {
+		display: none;
+	}
+
+	header .logo {
+		width: 20vw;
+		margin: 1.6vw;
+	}
+
+	header .mobile_btn {
+		display: block;
+		width: 7vw;
+		margin: 3vw;
+		margin-top: 3.8vw;
+	}
+
+	header .mobile_menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -100vw;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+	}
+
+	header .mobile_menu .menu_in {
+		background-color: #fff;
+		width: 75vw;
+		height: 100%;
+		padding: 7.5vw;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	header .mobile_menu button {
+		float: left;
+		width: 10vw;
+		margin: 7vw 7.5vw;
+	}
+
+	header .mobile_menu .menu_in p {
+		text-align: center;
+		font-size: 3vw;
+		margin-top: 5vw;
+	}
+
+	header .mobile_menu .menu_in p span {
+		font-weight: bold;
+	}
+
+	header .mobile_menu .menu_in .member a {
+		float: left;
+		width: 50%;
+		text-align: center;
+		font-size: 2.5vw;
+		border: 1px solid #ccc;
+		padding: 1.5vw;
+		box-sizing: border-box;
+
+	}
+
+	header .mobile_menu .menu_in .member {
+		width: 100%;
+		height: 10vw;
+	}
+
+	header .mobile_menu .menu_in .member a.active {
+		background-color: #212121;
+		color: #fff;
+		border: 1px solid #212121;
+	}
+
+	header .mobile_menu .menu_in .icon {
+		margin-top: 3vw;
+	}
+
+	header .mobile_menu .menu_in .icon ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	header .mobile_menu .menu_in .icon ul li {
+		width: 33.33333333333333%;
+		height: 24vw;
+		box-sizing: border-box;
+		padding: 4vw;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-right: none;
+	}
+
+
+
+	header .mobile_menu .menu_in .icon ul li p {
+		font-size: 2.5vw;
+		margin: 2vw 0;
+		white-space: nowrap;
+	}
+
+	header .mobile_menu .menu_in .icon ul li:last-child {
+		border-right: 1px solid #ccc;
+	}
+
+	header .mobile_menu .menu_in .tab {
+		width: 100%;
+		margin-top: 5vw;
+	}
+
+	header .mobile_menu .menu_in .tab .title {
+		display: flex;
+	}
+
+	header .mobile_menu .menu_in .tab .title a {
+		font-size: 2.5vw;
+		font-weight: bold;
+		width: 33.33333333333333%;
+		border: 1px solid #ccc;
+		background-color: #efefef;
+		text-align: center;
+		padding: 2vw;
+		box-sizing: border-box;
+		color: #666;
+	}
+
+	header .mobile_menu .menu_in .tab .title a.active {
+		background-color: #fff;
+		border-bottom: none;
+	}
+
+	header .mobile_menu .menu_in .tab .content {
+		position: relative;
+		width: 100%;
+	}
+
+	header .mobile_menu .menu_in .tab .content div {
+		width: 100%;
+		position: absolute;
+		background-color: #fff;
+		box-sizing: border-box;
+		padding: 5vw 0;
+	}
+
+	header .mobile_menu .menu_in .tab .content div a {
+		width: 100%;
+		font-size: 2.5vw;
+		padding: 1.5vw;
+		/*화살표background-image: url*/
+		/*background-position: center right;
+		background-repeat: no-repeat;
+		background-size: 16px;*/
+	}
+
+	h1 {
+		font-size: 4vw;
+		margin: 10vw
+	}
+	
+	
+	.one .swiper-wrapper {
+		height: 179vw;
+	}
+	
+	.one .t1 a {
+	background-image:url(../img/te1_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+	.one .t2 a {
+	background-image:url(../img/te2_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.one .t3 a {
+	background-image:url(../img/te3_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+	
+	
+	.four {
+		height: auto;
+	}
+
+	.four video {
+		position: relative;
+
+	}
+
+	.two {
+		margin-top: 7vw;
+	}
+
+	.two .swiper-container {
+		width: 40%;
+		height: 78vw;
+		margin: 0 auto;
+		margin-top: 8vw
+	}
+
+	.two .swiper-container a {
+		width: 40vw;
+	}
+
+	.three .left_area {
+		height: 110vw
+	}
+
+	.three .left_area h1 {
+		font-size: 5.3vw;
+		margin-right: 43vw;
+		margin-top: 8vw;
+	}
+
+	.three .left_area h3 {
+		font-family: 'NEXON Lv2 Gothic Bold';
+		font-size: 5.6vw;
+		text-align: center;
+		line-height: 9.3vw;
+		margin-right: 40.5vw;
+		padding-top: 8vw
+	}
+
+	.three .right_area {
+		height: 110vw;
+
+	}
+
+	.three .right_area ul li {
+		height: 30vh;
+	}
+
+	.three .right_area ul li a img {
+		width: 25vw;
+		margin-left: 22vw;
+		position: absolute;
+	}
+
+	.three .right_area ul .c2 a img {
+		margin-top: 5vw;
+	}
+
+	.three .right_area ul .c2 h2 {
+		position: absolute;
+		font-size: 5vw;
+		margin-top: 18vw;
+		margin-left: 7vw;
+	}
+
+	.three .right_area ul .c3 h2 {
+		font-size: 4.5vw;
+		margin-left: 1vw;
+	}
+
+	.three .right_area ul .c3 h3 {
+		position: absolute;
+		font-size: 4.5vw;
+		margin-left: 1vw;
+	}
+
+	.three .right_area ul .c3 p {
+		font-size: 4.5vw;
+		margin-top: 7.5vw;
+		margin-left: 1vw;
+		position: absolute;
+	}
+
+	.three .right_area ul .c4 a img {
+		width: 27.5vw;
+		margin-top: 5vw;
+	}
+
+	.three .right_area ul .c4 h2 {
+		font-size: 5vw;
+		padding-top: 13vw;
+		margin-right: 23vw;
+		text-align: right;
+		position: relative;
+		z-index: auto;
+		line-height: 8vw;
+	}
+
+	.three .right_area ul .c5 h2 {
+		font-size: 6.5vw;
+		width: 23vw;
+		margin: 21vw;
+	}
+
+	/*다섯번째*/
+	
+	
+	.five {
+		height: 130vw;
+	}
+	
+	.five .swiper-container {
+		height: 90vw;
+	}
+	
+	.five .swiper-wrapper {
+		margin: 3vw;
+	}
+	
+	.five .swiper-wrapper div img{
+		width: 35vw;
+	}
+	
+	.five .swiper-slide a p {
+		margin-top: 2.8vw;
+		font-size: 3vw;
+	}
+	
+	.five .swiper-slide a h2 {
+		margin-top:2vw;
+		font-size: 3.5vw;
+	}
+	
+	.five .swiper-slide a span {
+		font-size: 3vw;
+	}
+	
+	.seven {
+	width: 80%;
+	height: 180vw;
+	margin: 0 auto;
+}
+
+.seven .col-sm-4 {
+	height: 55vw;
+	border: 3px solid #e5e5e5;
+}
+
+
+.seven .col-sm-4 .image {
+	width: 11vw;
+	height: 4vw;
+	margin-top: 10vw;
+}
+
+.seven .col-sm-4 .image:hover {
+	transform: scale(1.2, 1.2);
+	/*크기 120%로 커짐*/
+}
+
+.seven .col-sm-4 .txt {
+	margin-top: 9.2vw;
+}
+
+.seven .col-sm-4 .txt h3 {
+	height: 4.5vw;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+	line-height: 6vw;
+}
+
+.seven .col-sm-4 .txt p {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 0.8vw;
+	margin-top: 8vw;
+	text-align: center;
+	color: #77797c;
+}
+	footer {
+	width: 100%;
+	height: 92vw;
+}
+
+
+footer address {
+	width: 90%;
+	font-size: 15px;
+	text-align: center;
+	line-height: 78px;
+
+}
+
+footer p {
+	padding-top: 5vw;
+	font-size: 3vw;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	color: #fff;
+}
+
+.fo1 .f_logo {
+	width: 100%;
+	text-align: center;
+	
+}
+
+.fo1 .f_logo img {
+	width: 25vw;
+	margin-top: 2vw;
+}
+
+.fo1 .f_logo h2 {
+
+	margin-top: 0.4vw;
+	font-size: 4vw;
+}
+
+	.sns {
+		direction: none;
+	}	
+	
+.sns ul {
+width: 0%;	
+margin: 0 auto;
+	text-align: center;
+
+}
+
+.sns ul li {
+	width: 7%;
+}
+
+
+}
+@media screen and (max-width:360px) {
+	header {
+		height: 60px;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .top_menu {
+		display: none;
+	}
+
+	header .logo {
+		width: 20vw;
+		margin: 1.6vw;
+	}
+
+	header .mobile_btn {
+		display: block;
+		width: 5vw;
+		margin: 2vw;
+		margin-top: 3.8vw;
+	}
+
+	header .mobile_menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -100vw;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+	}
+
+	header .mobile_menu .menu_in {
+		background-color: #fff;
+		width: 75vw;
+		height: 100%;
+		padding: 7.5vw;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	header .mobile_menu button {
+		float: left;
+		width: 10vw;
+		margin: 7vw 7.5vw;
+	}
+
+	header .mobile_menu .menu_in p {
+		text-align: center;
+		font-size: 3vw;
+		margin-top: 5vw;
+	}
+
+	header .mobile_menu .menu_in p span {
+		font-weight: bold;
+	}
+
+	header .mobile_menu .menu_in .member a {
+		float: left;
+		width: 50%;
+		text-align: center;
+		font-size: 2.5vw;
+		border: 1px solid #ccc;
+		padding: 1.5vw;
+		box-sizing: border-box;
+
+	}
+
+	header .mobile_menu .menu_in .member {
+		width: 100%;
+		height: 10vw;
+	}
+
+	header .mobile_menu .menu_in .member a.active {
+		background-color: #212121;
+		color: #fff;
+		border: 1px solid #212121;
+	}
+
+	header .mobile_menu .menu_in .icon {
+		margin-top: 3vw;
+	}
+
+	header .mobile_menu .menu_in .icon ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	header .mobile_menu .menu_in .icon ul li {
+		width: 33.33333333333333%;
+		height: 24vw;
+		box-sizing: border-box;
+		padding: 4vw;
+		text-align: center;
+		border: 1px solid #ccc;
+		border-right: none;
+	}
+
+
+
+	header .mobile_menu .menu_in .icon ul li p {
+		font-size: 2.5vw;
+		margin: 2vw 0;
+		white-space: nowrap;
+	}
+
+	header .mobile_menu .menu_in .icon ul li:last-child {
+		border-right: 1px solid #ccc;
+	}
+
+	header .mobile_menu .menu_in .tab {
+		width: 100%;
+		margin-top: 5vw;
+	}
+
+	header .mobile_menu .menu_in .tab .title {
+		display: flex;
+	}
+
+	header .mobile_menu .menu_in .tab .title a {
+		font-size: 2.5vw;
+		font-weight: bold;
+		width: 33.33333333333333%;
+		border: 1px solid #ccc;
+		background-color: #efefef;
+		text-align: center;
+		padding: 2vw;
+		box-sizing: border-box;
+		color: #666;
+	}
+
+	header .mobile_menu .menu_in .tab .title a.active {
+		background-color: #fff;
+		border-bottom: none;
+	}
+
+	header .mobile_menu .menu_in .tab .content {
+		position: relative;
+		width: 100%;
+	}
+
+	header .mobile_menu .menu_in .tab .content div {
+		width: 100%;
+		position: absolute;
+		background-color: #fff;
+		box-sizing: border-box;
+		padding: 5vw 0;
+	}
+
+	header .mobile_menu .menu_in .tab .content div a {
+		width: 100%;
+		font-size: 2.5vw;
+		padding: 1.5vw;
+		/*화살표background-image: url*/
+		/*background-position: center right;
+		background-repeat: no-repeat;
+		background-size: 16px;*/
+	}
+
+	h1 {
+		font-size: 4vw;
+		margin: 10vw
+	}
+	
+	
+	.one .swiper-wrapper {
+		height: 190vw;
+	}
+	
+	.one .t1 a {
+	background-image:url(../img/te1_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.one .t2 a {
+	background-image:url(../img/te2_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+	.one .t3 a {
+	background-image:url(../img/te3_mo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+	.one .swiper-pagination {
+		bottom: 1vw;
+	}
+	
+	
+	.four {
+		height: auto;
+	}
+
+	.four video {
+		position: relative;
+
+	}
+
+	.two {
+		margin-top: 7vw;
+	}
+
+	.two .swiper-container {
+		width: 40%;
+		height: 78vw;
+		margin: 0 auto;
+		margin-top: 8vw
+	}
+
+	.two .swiper-container a {
+		width: 40vw;
+	}
+
+	.three .left_area {
+		height: 110vw
+	}
+
+	.three .left_area h1 {
+		font-size: 5.3vw;
+		margin-right: 43vw;
+		margin-top: 8vw;
+	}
+
+	.three .left_area h3 {
+		font-family: 'NEXON Lv2 Gothic Bold';
+		font-size: 5.6vw;
+		text-align: center;
+		line-height: 9.3vw;
+		margin-right: 40.5vw;
+		padding-top: 8vw
+	}
+
+	.three .right_area {
+		height: 110vw;
+
+	}
+
+	.three .right_area ul li {
+		height: 30vh;
+	}
+
+	.three .right_area ul li a img {
+		width: 25vw;
+		margin-left: 22vw;
+		position: absolute;
+	}
+
+	.three .right_area ul .c2 a img {
+		margin-top: 5vw;
+	}
+
+	.three .right_area ul .c2 h2 {
+		position: absolute;
+		font-size: 5vw;
+		margin-top: 18vw;
+		margin-left: 7vw;
+	}
+
+	.three .right_area ul .c3 h2 {
+		font-size: 4.5vw;
+		margin-left: 1vw;
+	}
+
+	.three .right_area ul .c3 h3 {
+		position: absolute;
+		font-size: 4.5vw;
+		margin-left: 1vw;
+	}
+
+	.three .right_area ul .c3 p {
+		font-size: 4.5vw;
+		margin-top: 7.5vw;
+		margin-left: 1vw;
+		position: absolute;
+	}
+
+	.three .right_area ul .c4 a img {
+		width: 27.5vw;
+		margin-top: 5vw;
+	}
+
+	.three .right_area ul .c4 h2 {
+		font-size: 5vw;
+		padding-top: 13vw;
+		margin-right: 23vw;
+		text-align: right;
+		position: relative;
+		z-index: auto;
+		line-height: 8vw;
+	}
+
+	.three .right_area ul .c5 h2 {
+		font-size: 6.5vw;
+		width: 23vw;
+		margin: 21vw;
+	}
+
+	/*다섯번째*/
+	
+	
+	.five {
+		height: 130vw;
+	}
+	
+	.five .swiper-container {
+		height: 90vw;
+	}
+	
+	.five .swiper-wrapper {
+		margin: 3vw;
+	}
+	
+	.five .swiper-wrapper div img{
+		width: 35vw;
+	}
+	
+	.five .swiper-slide a p {
+		margin-top: 2.8vw;
+		font-size: 3vw;
+	}
+	
+	.five .swiper-slide a h2 {
+		margin-top:2vw;
+		font-size: 3.5vw;
+	}
+	
+	.five .swiper-slide a span {
+		font-size: 3vw;
+	}
+	
+	.seven {
+	width: 80%;
+	height: 180vw;
+	margin: 0 auto;
+}
+
+.seven .col-sm-4 {
+	height: 55vw;
+	border: 3px solid #e5e5e5;
+}
+
+
+.seven .col-sm-4 .image {
+	width: 11vw;
+	height: 4vw;
+	margin-top: 10vw;
+}
+
+.seven .col-sm-4 .image:hover {
+	transform: scale(1.2, 1.2);
+	/*크기 120%로 커짐*/
+}
+
+.seven .col-sm-4 .txt {
+	margin-top: 9.2vw;
+}
+
+.seven .col-sm-4 .txt h3 {
+	height: 4.5vw;
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 4vw;
+	font-weight: bold;
+	text-align: center;
+	line-height: 6vw;
+}
+
+.seven .col-sm-4 .txt p {
+	font-family: 'NEXON Lv2 Gothic Bold';
+	font-size: 0.8vw;
+	margin-top: 8vw;
+	text-align: center;
+	color: #77797c;
+}
+	footer {
+	width: 100%;
+	height: 85vw;
+}
+
+
+footer address {
+	width: 100%;
+	font-size: 3.3vw;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+footer p {
+	padding-top: 5vw;
+	font-size: 3vw;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	color: #fff;
+}
+
+.fo1 .f_logo {
+	width: 100%;
+	text-align: center;
+	
+}
+
+.fo1 .f_logo img {
+	width: 25vw;
+	margin-top: 2vw;
+}
+
+.fo1 .f_logo h2 {
+
+	margin-top: 0.4vw;
+	font-size: 4vw;
+}
+
+	.sns {
+		direction: none;
+	}	
+	
+.sns ul {
+width: 0%;	
+margin: 0 auto;
+	text-align: center;
+
+}
+
+.sns ul li {
+	width: 7%;
+}
+	
+}
